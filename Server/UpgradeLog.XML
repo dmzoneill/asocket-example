@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Server">
+</Property><Property Name="Solution File" Value="C:\Program Files\ActiveXperts\ActiveSocket\Examples\Visual Basic.NET\Client-server\Server\Server.sln">
+</Property><Property Name="Date" Value="14 July 2005">
+</Property><Property Name="Time" Value="16:48">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Server.sln" Description="File successfully backed up as C:\Program Files\ActiveXperts\ActiveSocket\Examples\Visual Basic.NET\Client-server\Server\Backup\Server.sln">
+</Event><Event ErrorLevel="0" Project="Server" Source="Server.vbproj" Description="Project file successfully backed up as C:\Program Files\ActiveXperts\ActiveSocket\Examples\Visual Basic.NET\Client-server\Server\Backup\Server.vbproj">
+</Event><Event ErrorLevel="0" Project="Server" Source="Server.vbproj.user" Description="Project user file successfully backed up as C:\Program Files\ActiveXperts\ActiveSocket\Examples\Visual Basic.NET\Client-server\Server\Backup\Server.vbproj.user">
+</Event><Event ErrorLevel="0" Project="Server" Source="AssemblyInfo.vb" Description="File successfully backed up as C:\Program Files\ActiveXperts\ActiveSocket\Examples\Visual Basic.NET\Client-server\Server\Backup\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="Server" Source="Constants.vb" Description="File successfully backed up as C:\Program Files\ActiveXperts\ActiveSocket\Examples\Visual Basic.NET\Client-server\Server\Backup\Constants.vb">
+</Event><Event ErrorLevel="0" Project="Server" Source="Server.vb" Description="File successfully backed up as C:\Program Files\ActiveXperts\ActiveSocket\Examples\Visual Basic.NET\Client-server\Server\Backup\Server.vb">
+</Event><Event ErrorLevel="0" Project="Server" Source="Server.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Server" Source="Server.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Server.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Server.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,12 @@
+bin\Server.exe
+bin\Server.pdb
+bin\Server.xml
+bin\Interop.ASOCKETLib.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Interop.ASOCKETLib.dll
+obj\Debug\ResolveComReference.cache
+obj\Debug\Server.Resources.resources
+obj\Debug\Server.vbproj.GenerateResource.Cache
+obj\Debug\Server.exe
+obj\Debug\Server.xml
+obj\Debug\Server.pdb
