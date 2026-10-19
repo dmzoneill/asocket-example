@@ -155,7 +155,7 @@ Public Class ActiveSocketConstants
     Public asERR_LIBWSNMP2APIBINDINGFAILURE As Integer = 105	    ' One or more exported functions missing in WSNMP32.DLL
 
     Public asERR_SNMP_LIBRARIESNOTLOADED As Integer = 110	        ' SNMP Libraries not loaded; operation not allowed
-    Public asERR_SNMP_WINSNMPINITFAILED As Integer = 111	        ' Unable to intialize WinSNMP
+    Public asERR_SNMP_WINSNMPINITFAILED As Integer = 111	        ' Unable to initialize WinSNMP
     Public asERR_SNMP_LIBNOTINITIALIZED As Integer = 112	        ' Library not initialized. 
     Public asERR_SNMP_OPENSESSIONFAILED As Integer = 113	        ' Unable to open SNMP session
     Public asERR_SNMP_SESSIONALREADYOPENED As Integer = 114	        ' Session already opened
