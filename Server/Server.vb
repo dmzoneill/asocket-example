@@ -34,46 +34,14 @@ fed:
                         strMessage = objSocket.ReceiveString
 
                         ' taskkill
-                        If strMessage.IndexOf("kill") > 0 Then
-                            Dim im(2) As String
-                            Dim args As String
-                            Dim process As String
-                            im = strMessage.Split("|")
-                            process = im(0)
-                            args = im(1)
-                            Dim ProcessStartInfo As New System.Diagnostics.ProcessStartInfo()
-                            ProcessStartInfo.FileName = "taskkill.exe"
-                            ProcessStartInfo.Arguments = args
-                            ProcessStartInfo.WorkingDirectory = ""
-                            ProcessStartInfo.WindowStyle = ProcessStartInfo.WindowStyle.Normal
-                            ProcessStartInfo.UseShellExecute = True
-                            ProcessStartInfo.CreateNoWindow = True
-                            System.Diagnostics.Process.Start(ProcessStartInfo)
-                            System.Threading.Thread.Sleep(20)
-                            Console.WriteLine("ReceiveString: " & strMessage & vbNewLine)
+                        If StartHostProcess(strMessage, "kill", "taskkill.exe") Then
                             objSocket.Disconnect()
                             GoTo fed
                         End If
 
 
                         ' shutdown - restart
-                        If strMessage.IndexOf("down") > 0 Then
-                            Dim im(2) As String
-                            Dim args As String
-                            Dim process As String
-                            im = strMessage.Split("|")
-                            process = im(0)
-                            args = im(1)
-                            Dim ProcessStartInfo As New System.Diagnostics.ProcessStartInfo()
-                            ProcessStartInfo.FileName = "shutdown.exe"
-                            ProcessStartInfo.Arguments = args
-                            ProcessStartInfo.WorkingDirectory = ""
-                            ProcessStartInfo.WindowStyle = ProcessStartInfo.WindowStyle.Normal
-                            ProcessStartInfo.UseShellExecute = True
-                            ProcessStartInfo.CreateNoWindow = True
-                            System.Diagnostics.Process.Start(ProcessStartInfo)
-                            System.Threading.Thread.Sleep(20)
-                            Console.WriteLine("ReceiveString: " & strMessage & vbNewLine)
+                        If StartHostProcess(strMessage, "down", "shutdown.exe") Then
                             objSocket.Disconnect()
                             GoTo fed
                         End If
@@ -90,6 +58,28 @@ fed:
 
     End Sub
 
-
+    ' Shared by the taskkill and shutdown message handlers.
+    Private Function StartHostProcess(ByVal strMessage As String, ByVal marker As String, ByVal fileName As String) As Boolean
+        If strMessage.IndexOf(marker) > 0 Then
+            Dim im(2) As String
+            Dim args As String
+            Dim process As String
+            im = strMessage.Split("|")
+            process = im(0)
+            args = im(1)
+            Dim ProcessStartInfo As New System.Diagnostics.ProcessStartInfo()
+            ProcessStartInfo.FileName = fileName
+            ProcessStartInfo.Arguments = args
+            ProcessStartInfo.WorkingDirectory = ""
+            ProcessStartInfo.WindowStyle = ProcessStartInfo.WindowStyle.Normal
+            ProcessStartInfo.UseShellExecute = True
+            ProcessStartInfo.CreateNoWindow = True
+            System.Diagnostics.Process.Start(ProcessStartInfo)
+            System.Threading.Thread.Sleep(20)
+            Console.WriteLine("ReceiveString: " & strMessage & vbNewLine)
+            Return True
+        End If
+        Return False
+    End Function
 
 End Module

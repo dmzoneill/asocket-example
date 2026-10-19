@@ -95,6 +95,14 @@
     <Compile Include="AssemblyInfo.vb">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="..\Shared\ActiveSocketConstants.vb">
+      <Link>ActiveSocketConstants.vb</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="..\Shared\AssemblyAttributes.vb">
+      <Link>AssemblyAttributes.vb</Link>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Constants.vb">
       <SubType>Code</SubType>
     </Compile>
