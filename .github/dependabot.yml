@@ -14,18 +14,3 @@ updates:
       github-actions:
         patterns:
           - "*"
-  - package-ecosystem: "nuget"
-    directories:
-      - "/Client"
-      - "/Client/Backup"
-      - "/Server"
-      - "/Server/Backup"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
-    labels:
-      - "dependencies"
-    groups:
-      nuget:
-        patterns:
-          - "*"
