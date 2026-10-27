@@ -1,5 +1,9 @@
 # ActiveSocket Example
 
+<p align="center">
+  <img src=".github/logo.png" alt="asocket-example logo" width="128" />
+</p>
+
 A pair of VB.NET console programs showing how to use the ActiveSocket
 COM library (`ASOCKETLib`) for raw TCP messaging.
 
